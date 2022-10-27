@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ufo-map"
+version = "0.1.0"
+description = "convert pdf to vsc and then make a map of sightings"
+authors = ["Callum Fay <callumfay_16@hotmail.co.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ufo_map"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tabula-py = "^2.5.1"
+setuptools = "^65.5.0"
+geopy = "^2.2.0"
+flask = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
