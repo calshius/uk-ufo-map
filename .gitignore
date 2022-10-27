@@ -9,7 +9,7 @@
 /coverage
 
 # production
-**/build
+ufo-map-js//build
 
 # misc
 .DS_Store
