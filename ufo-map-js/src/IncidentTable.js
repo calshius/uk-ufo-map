@@ -5,7 +5,7 @@ import sightings from "./data/sighting_geos.json";
 const columns = [
   {
     name: "id",
-    label: "id",
+    label: "ID",
     options: {
       filter: true,
       sort: false,
@@ -13,7 +13,7 @@ const columns = [
   },
   {
     name: "date",
-    label: "date",
+    label: "Date",
     options: {
       filter: true,
       sort: true,
@@ -21,7 +21,7 @@ const columns = [
   },
   {
     name: "area",
-    label: "area",
+    label: "Area",
     options: {
       filter: true,
       sort: true,
@@ -29,7 +29,7 @@ const columns = [
   },
   {
     name: "town",
-    label: "town",
+    label: "Town",
     options: {
       filter: true,
       sort: true,
@@ -37,7 +37,7 @@ const columns = [
   },
   {
     name: "incident",
-    label: "incident",
+    label: "Incident",
     options: {
       filter: false,
       sort: false,
@@ -46,12 +46,16 @@ const columns = [
 ];
 
 const options = {
-  filterType: "checkbox",
+  filterType: "dropdown",
+  selectableRows: false,
+  responsive: "scroll",
+  resizableColumns: true,
+  print: false,
 };
 
 const IncidentTable = () => {
   return (
-    <div>
+    <div style={{ display: "table", tableLayout: "fixed", width: "100%" }}>
       <MUIDataTable
         title={"Sightings"}
         data={sightings}
