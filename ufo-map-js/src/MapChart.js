@@ -18,9 +18,9 @@ const MapChart = () => {
         projection="geoAlbers"
         projectionConfig={{
           rotate: [4.4, 0],
-          center: [1, 57.4],
+          center: [1, 53],
           parallels: [50, 0],
-          scale: 2500,
+          scale: 3100,
         }}
         fill="black"
       >
